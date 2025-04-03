@@ -1,50 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactame</title>
-    <link rel="shortcut icon" href="/assets/Icono.PNG" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/icono.PNG" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h2>SI ESTAS INTERESADO EN TENER UNA REUNÓN CONMIGO</h2>
+        <h2 class="alfa-slab-one-regular1">SI ESTAS INTERESADO EN TENER UNA REUNÓN CONMIGO</h2>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="sobre-mi.html">Sobre mí</a>
+            <a href="aprendizaje.html">Mis Aprendizajes</a>
+            <a href="#">Contactame</a>
+    </nav>
     </header>
+    <hr>
     <main>
-    <div class="container">
-        <p>Diligencia el siguiente formulario:</p>
-        
+        <div class="intro">
+            <p>Podemos conversar sobre ideas innovadoras, proyectos en desarrollo o cualquier tema que te parezca interesante. Estoy disponible para una charla en la que podamos intercambiar conocimientos, explorar nuevas oportunidades y colaborar en posibles iniciativas. ¡Será un gusto conectar contigo! 😊</p>
+        </div>
+        <h5 class="alfa-slab-one-regular1">DILIGENCIA EL SIGUIENTE FORMULARIO:</h5>
+    <form>
             <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
             <br>
-
+            <input type="text" id="nombre" >
+            <br>
+            <br>
             <label for="email">Correo Electrónico:</label>
-            <input type="email" id="email" name="email" required>
             <br>
-
-            <label for="password">Contraseña:</label>
-            <input type="password" id="password" name="password" required>
-
+            <input type="email" id="email">
+            <br>
             <br>
             <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-
+            <br>
+            <textarea id="mensaje" name="mensaje"></textarea>
+            <br>
+            <br>
             <button type="submit">Enviar</button>
+            <br>
         
-    </div>
+    </form>
 </main>
+<hr>
 <footer>
+    <div class="pie">
     <a href="https://www.facebook.com/?locale=es_LA">
         <img src="assets/facebook.png" alt="facebook">
     </a>
        
     <a href="https://www.instagram.com/">
-        <img src="assets/Instagram.PNG" alt="Instagram">  
+        <img src="assets/instagram.PNG" alt="Instagram">  
     </a>
     <a href="https://x.com/?lang=es">
-        <img src="assets/Twitter.PNG" alt="Twitter">
+        <img src="assets/twitter.PNG" alt="Twitter">
     </a>
-
+    </div>
+    <div class="copy">
+        <p>&copy; 2025 Vale</p>
+    </div> 
 </footer>
 </body>
 </html>
