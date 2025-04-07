@@ -141,17 +141,17 @@ th, td {
 
 
   .frase1{
-    position: absolute;
-    top: 50%; /* Centra verticalmente */
-    left: 50%; /* Centra horizontalmente */
-    transform: translate(-50%, 70%); /* Ajusta la posición exacta */
-    color: rgb(70, 70, 70); 
-    font-size: 30px; /* Tamaño del texto */
-    font-weight: bold;
+    position: absolute;  /* Posiciona el texto de forma absoluta */
+    top: 50%; /* Lo mueve al 50% desde arriba */
+    left: 50%; /* Lo mueve al 50% desde la izquierda */
+    transform: translate(-50%, 70%); /* Lo centra y lo baja un poco más */
+    color: rgb(70, 70, 70);/* Texto en gris oscuro */
+    font-size: 30px; /* Tamaño de letra */
+    font-weight: bold;/* Negrita */
     text-align: center;
-    padding: 10px;
-    border-radius: 5px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;                  
+    border-radius: 5px;            
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
   }
 
   .galeria{
