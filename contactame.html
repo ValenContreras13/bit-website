@@ -19,6 +19,7 @@
         <a href="index.html">Inicio</a>
         <a href="sobre-mi.html">Sobre mí</a>
         <a href="aprendizaje.html">Mis Aprendizajes</a>
+        <a href="favoritos.html">Favoritos</a>
         <a href="#">Contactame</a>
 </nav>
     <hr>
@@ -35,12 +36,16 @@
             <br>
             <label for="email">Correo Electrónico:</label>
             <br>
-            <input type="email" id="email">
+            <input type="email" id="email" required>
             <br>
             <br>
             <label for="mensaje">Mensaje:</label>
             <br>
             <textarea id="mensaje" name="mensaje"></textarea>
+            <br>
+            <label for="fecha"> Fecha en la que quieres programar la reunión</label>
+            <br>
+            <input type="date" id="fecha" required>
             <br>
             <br>
             <button type="submit">Enviar</button>
