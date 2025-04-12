@@ -1,4 +1,10 @@
 /* GLOBALES */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 :root{
     --section-background-programas: white;
     --section-background-carrusel:radial-gradient(#d6aefb,#d9d9d9);
@@ -612,3 +618,99 @@ justify-content: center;
     font-size: 15px;
     font-weight: bold;
 }
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 576px) {
+    h1 {
+      background-color: blue;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    h1 {
+      background-color: red;
+    }
+
+    header{
+        background-color: #d9d9d9; 
+        width: 1320px;
+    }
+
+    header h1{
+        font-size: 45px;
+    }
+    .fondo{
+        width: 1325px; /* Ancho fijo */
+        height: 500px; /* Alto fijo */
+        justify-content: center;
+    }
+
+    .frase{
+        position: absolute;
+        top: 50%; /* Centra verticalmente */
+        left: 50%; /* Centra horizontalmente */
+        transform: translate(-50%, -50%); /* Ajusta la posición exacta */
+        color: rgb(73, 10, 92); 
+        font-size: 40px; /* Tamaño del texto */
+        font-weight: bold;
+        /* text-align: center; */
+        padding: 10px;
+        border-radius: 5px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      
+      .galeria img{
+        width: 210px; /* Ajusta el ancho de las imágenes */
+        height: 300px; /
+      }
+      .galeria2 img{
+        width: 210px; /* Ajusta el ancho de las imágenes */
+        height: 300px; /
+      }
+      
+.receta img{
+    position: absolute;
+    top: 50%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(45%, 375%); /* Ajusta la posición exacta */
+
+    /* margin: 5px; */
+    width: 250px; /* Ajusta el ancho de las imágenes */
+    height: 270px;
+    border-radius: 15px;
+    border-style:double;
+}
+.misvideos{
+    padding: 25px;
+    border: 0;
+    justify-content: center;
+}
+
+.misvideos h3{
+    padding: 0;
+    margin: 10px;
+}
+.misvideos img{
+    width: 600px; /* Ajusta el ancho de las imágenes */
+    height: 800px;
+    border: 5px solid rgb(104, 100, 104);
+    margin: 25px;
+    
+}
+.misvideos video{
+    width: 600px; /* Ajusta el ancho de las imágenes */
+    height: 800px;
+    border: 5px solid rgb(104, 100, 104);
+    margin: 25px;
+}
+  }
+  
+
+  @media screen and (min-width: 992px) {
+    h1 {
+      background-color: green;
+    }
+
+   
+
+  }
