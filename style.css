@@ -11,8 +11,13 @@
     --section-background:linear-gradient(#fdfffc,#b79ced);
     --Titulos: "AlfaSlabOne";
 }
+
+html{
+    height: 100%;
+}
 body{
     padding: 0;
+    height: 100%;
 }
 header{
     background-color: #d9d9d9; 
@@ -78,10 +83,10 @@ h5{
 
 nav {
     display: flex;
-    justify-content: center; /* Centra horizontalmente los elementos */
-    gap: 80px; /* Espacio entre elementos */
+    justify-content: center; 
+    gap: 80px; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
+  } 
   
 form{
     border: 0;
@@ -341,8 +346,6 @@ border-radius:20px 40px;
     margin-top: 10px; /* Espacio entre el título y el audio */
   }
   
-
-
 .misvideos{
     padding: 25px;
     border: 0;
@@ -377,6 +380,7 @@ border-radius:20px 40px;
 .intro{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
+    text-align: center;
 }
 
 .estudio img{
@@ -619,11 +623,121 @@ justify-content: center;
     font-weight: bold;
 }
 
-/* MEDIA QUERIES */
+/* MEDIA QUERY */
 @media screen and (min-width: 576px) {
+
+    /* ETIQUETAS GLOBALES */
     h1 {
       background-color: blue;
     }
+    nav {
+        display: flex;
+        justify-content: center; 
+        gap: 30px; 
+        /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+      } 
+
+      iframe {
+        display: block; /* Necesario para que `margin: auto;` funcione */
+        margin: auto; /* Centra horizontalmente */
+        width: 500px; /* Ajusta el ancho según necesites */
+        height: 400px; /* Ajusta la altura */
+    }
+    h5{
+        padding: 10px;
+    }
+
+       /* CLASES */
+
+      .frase {
+        position: absolute;
+        top: 50%; /* Centra verticalmente */
+        left: 50%; /* Centra horizontalmente */
+        transform: translate(-50%, -90%); /* Ajusta la posición exacta */
+        color: rgb(73, 10, 92); 
+        border-radius: 5px;
+      }
+
+      .frase1{
+        position: absolute;  /* Posiciona el texto de forma absoluta */
+        top: 50%; /* Lo mueve al 50% desde arriba */
+        left: 50%; /* Lo mueve al 50% desde la izquierda */
+        transform: translate(-50%, -5%); /* Lo centra y lo baja un poco más */
+        color: rgb(70, 70, 70);/* Texto en gris oscuro */
+        font-size: 30px; /* Tamaño de letra */
+        font-weight: bold;/* Negrita */
+        text-align: center;
+        padding: 10px;                  
+        border-radius: 5px;            
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+      }
+      .carrusel img{
+        width: 350px; /* Ajusta el ancho de las imágenes */
+        height: 420px; 
+        /* border: 5px solid rgb(70, 23, 70);
+        border-radius: 5px; */   
+    }
+    .receta img{
+        position: absolute;
+        top: 50%; /* Centra verticalmente */
+        left: 50%; /* Centra horizontalmente */
+        transform: translate(30%, 680%); /* Ajusta la posición exacta */
+        /* margin: 5px; */
+        width: 210px; /* Ajusta el ancho de las imágenes */
+        height: 280px;
+        border-radius: 15px;
+        border-style:double;
+    }
+    .misvideos img{
+        width: 500px; 
+        height: 700px;
+        border: 5px solid rgb(104, 100, 104);
+    }
+    .misvideos video{
+        width: 500px; 
+        height: 700px;
+        border: 5px solid rgb(104, 100, 104);
+    }
+
+    .misvideos{
+        padding: 25px;
+        text-align: center;
+    }
+
+   
+    .estudio img{
+        width: 700px; /* Ajusta el ancho de las imágenes */
+        height: 900px;
+    }
+    .kdramas{
+        display: flex;
+        flex-wrap: wrap; /* Permite que las imágenes bajen de línea si no caben */
+        gap: 5px; /* Espacio entre imágenes */
+        text-align: center;
+      }
+      #col img{
+        width: 400px;
+         height: 500px;
+         padding: 15px; 
+        border-radius: 5px ;
+        
+     }
+
+     
+     form{
+        border: 0;
+        width: 90%; /* Ajusta el ancho del formulario */
+        max-width: 400px; /* Máximo tamaño */
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        transform: translate(-10%, -10%); 
+        font-weight: bold;
+        background-color: #e7c6ff;
+        text-align: center;
+        padding: 10px;
+        margin: auto;
+    }
+     
+    
   }
 
   @media screen and (min-width: 768px) {
@@ -631,78 +745,121 @@ justify-content: center;
       background-color: red;
     }
 
-    header{
+      /* ETIQUETAS GLOBALES */
+      header{
         background-color: #d9d9d9; 
-        width: 1320px;
+        padding: auto;
     }
 
     header h1{
         font-size: 45px;
     }
-    .fondo{
-        width: 1325px; /* Ancho fijo */
-        height: 500px; /* Alto fijo */
-        justify-content: center;
+    hr{
+        width: auto;
+    }
+    nav {
+        display: flex;
+        border: 20px;
+        justify-content: center; 
+        align-items: auto;
+        gap: 85px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      form{
+        border: 0;
+        width: 50%; /* Ajusta el ancho del formulario */
+        max-width: 400px; /* Máximo tamaño */
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        transform: translate(-10%, -10%); 
+        font-weight: bold;
+        background-color: #e7c6ff;
+        text-align: center;
+        padding: 5px;
+        margin: auto;
     }
 
-    .frase{
+      /* CLASES */
+      .fondo{
+        width: 752px; /* Ancho fijo */
+        height: 300px; /* Alto fijo */
+        justify-content: center;
+    }
+    .frase {
         position: absolute;
         top: 50%; /* Centra verticalmente */
         left: 50%; /* Centra horizontalmente */
-        transform: translate(-50%, -50%); /* Ajusta la posición exacta */
+        transform: translate(-50%, -90%); /* Ajusta la posición exacta */
         color: rgb(73, 10, 92); 
-        font-size: 40px; /* Tamaño del texto */
-        font-weight: bold;
-        /* text-align: center; */
-        padding: 10px;
         border-radius: 5px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .galeria,.galeria2 {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px; /* Espacio entre las imágenes */
+        justify-content: center;
       }
       
-      .galeria img{
-        width: 210px; /* Ajusta el ancho de las imágenes */
-        height: 300px; /
-      }
-      .galeria2 img{
-        width: 210px; /* Ajusta el ancho de las imágenes */
-        height: 300px; /
+      .galeria img,.galeria2 img{
+        width: 240px; /* Ajusta el ancho de las imágenes */
+        height: 400px; /
       }
       
-.receta img{
-    position: absolute;
-    top: 50%; /* Centra verticalmente */
-    left: 50%; /* Centra horizontalmente */
-    transform: translate(45%, 375%); /* Ajusta la posición exacta */
+      .receta img{
+        position: absolute;
+        top: 50%; /* Centra verticalmente */
+        left: 50%; /* Centra horizontalmente */
+        transform: translate(40%, 340%); /* Ajusta la posición exacta */
+        /* margin: 5px; */
+        width: 250px; /* Ajusta el ancho de las imágenes */
+        height: 280px;
+        border-radius: 15px;
+        border-style:double;
+    }
 
-    /* margin: 5px; */
-    width: 250px; /* Ajusta el ancho de las imágenes */
-    height: 270px;
-    border-radius: 15px;
-    border-style:double;
-}
-.misvideos{
-    padding: 25px;
-    border: 0;
-    justify-content: center;
-}
+    .misvideos img{
+        width: 550px; 
+        height: 800px;
+        border: 5px solid rgb(104, 100, 104);
+    }
+    .misvideos video{
+        width: 550px; 
+        height: 800px;
+        border: 5px solid rgb(104, 100, 104);
+    }
 
-.misvideos h3{
-    padding: 0;
-    margin: 10px;
-}
-.misvideos img{
-    width: 600px; /* Ajusta el ancho de las imágenes */
-    height: 800px;
-    border: 5px solid rgb(104, 100, 104);
-    margin: 25px;
-    
-}
-.misvideos video{
-    width: 600px; /* Ajusta el ancho de las imágenes */
-    height: 800px;
-    border: 5px solid rgb(104, 100, 104);
-    margin: 25px;
-}
+    .misvideos{
+        padding: 25px;
+        text-align: center;
+    }
+
+    .frase1{
+        position: absolute;  /* Posiciona el texto de forma absoluta */
+        top: 50%; /* Lo mueve al 50% desde arriba */
+        left: 50%; /* Lo mueve al 50% desde la izquierda */
+        transform: translate(-50%, -35%); /* Lo centra y lo baja un poco más */
+        color: rgb(70, 70, 70);/* Texto en gris oscuro */
+        font-size: 30px; /* Tamaño de letra */
+        font-weight: bold;/* Negrita */
+        text-align: center;
+        padding: 10px;                  
+        border-radius: 5px;            
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+      }
+
+      .kdramas{
+        display: flex;
+        flex-wrap: wrap; /* Permite que las imágenes bajen de línea si no caben */
+        gap: 5px; /* Espacio entre imágenes */
+        text-align: center;
+      }
+        
+    .kdramas img{
+        width: 310px;
+        height: 400px ;
+        }
+
   }
   
 
@@ -711,6 +868,60 @@ justify-content: center;
       background-color: green;
     }
 
-   
+    /* CLASES */
+    .fondo{
+        width: 975px; /* Ancho fijo */
+        height: 400px; /* Alto fijo */
+        justify-content: center;
+    }
 
+    .frase {
+        position: absolute;
+        top: 50%; /* Centra verticalmente */
+        left: 50%; /* Centra horizontalmente */
+        transform: translate(-50%, -120%); /* Ajusta la posición exacta */
+        color: rgb(73, 10, 92); 
+        border-radius: 5px;
+      }
+
+      .galeria,.galeria2 {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px; /* Espacio entre las imágenes */
+        justify-content: center;
+      }
+      
+      .galeria img,.galeria2 img{
+        width: 320px; /* Ajusta el ancho de las imágenes */
+        height: 400px; /
+      }
+
+      .carrusel img{
+        width: 320px; /* Ajusta el ancho de las imágenes */
+        height: 400px; 
+        border: 5px solid rgb(70, 23, 70);
+        border-radius: 5px;
+    }
+
+    .receta img{
+        position: absolute;
+        top: 50%; /* Centra verticalmente */
+        left: 50%; /* Centra horizontalmente */
+        transform: translate(55%, 280%); /* Ajusta la posición exacta */
+        /* margin: 5px; */
+        width: 280px; /* Ajusta el ancho de las imágenes */
+        height: 315px;
+        border-radius: 15px;
+        border-style:double;
+    }
+
+    .kdramas img{
+        width: 330px;
+        height: 400px ;
+        }
+
+        .estudio img{
+          width: 995px; /* Ajusta el ancho de las imágenes */
+          height: 700px;
+      }
   }
