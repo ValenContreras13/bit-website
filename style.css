@@ -419,7 +419,6 @@ display: flex;
   width: 250px;
   height: 400px ;
   transition: transform 0.4s ease;
-border-radius: 15px;
 }
 
 .kdramas img:hover {
@@ -565,10 +564,11 @@ justify-content: center;
 }
 
 #col img{
-   width: 260px;
+   width: 300px;
     height: 400px;
     padding: 10px; 
     transition: transform 0.4s ease;
+    border-radius: 15%;
    
 }
 
