@@ -616,6 +616,13 @@ justify-content: center;
       width: 300px;
     }
 
+    /* ID */
+    #col img{
+      width: 320px;
+      border-radius: 10%;
+      
+   }
+
  }
  
 
