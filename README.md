@@ -15,5 +15,8 @@ Siéntete libre de explorar cada sección: descubrirás lo que me apasiona, lo q
 Gracias por estar aquí y ser parte de este pedacito de mí.
 
 ---
+---
+[Link to Git](https://github.com/ValenContreras13)
+---
 
 > Autor: Valentina Contreras Ribon
