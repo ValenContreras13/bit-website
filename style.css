@@ -87,7 +87,8 @@ nav {
     gap: 80px; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   } 
-  
+
+  /* Formulario */
 form{
     border: 0;
     width: 50%; /* Ajusta el ancho del formulario */
@@ -108,6 +109,7 @@ iframe {
     height: 500px; /* Ajusta la altura */
 }
 
+/* Tabla */
 table {
     width: 80%; /* Ajusta el ancho de la tabla */
     border-collapse: collapse; /* Une los bordes de las celdas */
@@ -455,10 +457,6 @@ border-radius: 15px;
 #motivacion, #maquillaje, #asmr,#comu,#viaje{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
-   /* display:flex;
-   align-items: center; /* Alinea verticalmente 
-   gap: 20px; */
-   
 }
 
 #maquillaje,#asmr ,#comu ,#viaje   {
@@ -477,8 +475,7 @@ border-radius: 15px;
     width: 300px; /* Ajusta el tamaño de la imagen según sea necesario */
     height: 300px;
     border-style:dotted;
-border-radius:20px 40px;
-    /* height: auto; Mantiene la proporción */
+    border-radius:20px 40px;
 }
 
 #maquillaje p, #asmr p,#comu p,#viaje p{
@@ -499,7 +496,6 @@ border-radius:20px 40px;
     font-weight: 500;
     text-align: center;
     color: #3f0469;
-    /* background-color: white; */
     background-color:var(--section-background-programas);
     border-radius: 20px;
     padding: 10px;
@@ -510,7 +506,6 @@ border-radius:20px 40px;
     height: 300px;
     border-style:dotted;
     border-radius:20px 60px;
-    /* height: auto; Mantiene la proporción */
 }
 
 #office p,#python p,#django p,#sql p,#java p,#kanecode p {
@@ -526,8 +521,6 @@ border-radius:20px 40px;
 #bachillerato img,#inge img,.espe img{
     width: 200px; /* Ajusta el tamaño de la imagen según sea necesario */
     height: 200px;
- 
-    /* height: auto; Mantiene la proporción */
 }
 
 #bachillerato p,#inge p,.espe p{
@@ -592,56 +585,62 @@ justify-content: center;
 
 @media screen and (min-width: 576px) {
       /* ETIQUETAS GLOBALES */
-  nav{
-   font-size: 12px;
-   gap: 60px; 
-  }
-   
- iframe {
-  width: 500px; 
-  height: 500px; 
-}
-  
-  .misvideos img{
-   width: 500px; 
-   height: 800px;
-   border: 5px solid rgb(104, 100, 104);
- }
- .misvideos video{
-   width: 500px; 
-   height: 800px;
-   border: 5px solid rgb(104, 100, 104);
- }
- 
- .misvideos{
-   padding: 25px;
-   text-align: center;
- }
+    nav{
+      font-size: 12px;
+      gap: 60px; 
+      }
+      
+    iframe {
+      width: 500px; 
+      height: 500px; 
+    }
+      
+    .misvideos img{
+      width: 500px; 
+      height: 800px;
+      border: 5px solid rgb(104, 100, 104);
+    }
+    
+    .misvideos video{
+      width: 500px; 
+      height: 800px;
+      border: 5px solid rgb(104, 100, 104);
+    }
+    
+    .misvideos{
+      padding: 25px;
+      text-align: center;
+    }
 
- .carrusel img{
-  width: 300px;
- }
+    .carrusel img{
+      width: 300px;
+    }
 
  }
  
 
 
 @media screen and (min-width: 768px) {
-    /* ETIQUETAS GLOBALES */
-    header{
+  /* ETIQUETAS GLOBALES */
+  header{
       background-color: #d9d9d9; 
       padding: auto;
   }
+  
+  nav{
+    font-size: 15px;
+    gap: 60px; 
+   }
 
   header h1{
       font-size: 45px;
   }
+  
   hr{
       width: auto;
   }
-  
 
-    form{
+  form{
       border: 0;
       width: 50%; /* Ajusta el ancho del formulario */
       max-width: 400px; /* Máximo tamaño */
@@ -655,26 +654,26 @@ justify-content: center;
   }
 
     /* CLASES */
-    .galeria,.galeria2 {
+  .galeria,.galeria2 {
       display: flex;
       flex-wrap: wrap;
       gap: 5px; /* Espacio entre las imágenes */
       justify-content: center;
-    }
+  }
     
-    .galeria img,.galeria2 img{
+  .galeria img,.galeria2 img{
       width: 240px; /* Ajusta el ancho de las imágenes */
       height: 400px; /
-    }
-    
+    }  
 
   .misvideos img{
       width: 550px; 
       height: 800px;
       border: 5px solid rgb(104, 100, 104);
   }
+  
   .misvideos video{
-      width: 550px; 
+      width: 600px; 
       height: 800px;
       border: 5px solid rgb(104, 100, 104);
   }
@@ -687,8 +686,9 @@ justify-content: center;
   .estudio img{
     width: 790px; /* Ajusta el ancho de las imágenes */
     height: 900px;
-}
-    .kdramas{
+  }
+  
+  .kdramas{
       display: flex;
       flex-wrap: wrap; /* Permite que las imágenes bajen de línea si no caben */
       gap: 5px; /* Espacio entre imágenes */
@@ -703,21 +703,26 @@ justify-content: center;
 }
 
 @media screen and (min-width: 992px) {
+  /* GLOBALES */
+  nav{
+    font-size: 19px;
+    gap: 60px; 
+   }
 
   /* CLASES */
-    .galeria,.galeria2 {
+  .galeria,.galeria2 {
       display: flex;
       flex-wrap: wrap;
       gap: 5px; /* Espacio entre las imágenes */
       justify-content: center;
     }
     
-    .galeria img,.galeria2 img{
+  .galeria img,.galeria2 img{
       width: 310px; /* Ajusta el ancho de las imágenes */
       height: 400px; /
     }
 
-    .carrusel img{
+  .carrusel img{
       width: 340px; /* Ajusta el ancho de las imágenes */
       height: 400px; 
       border: 5px solid rgb(70, 23, 70);
@@ -729,20 +734,20 @@ justify-content: center;
       height: 400px ;
       }
 
-    .estudio img{
+  .estudio img{
         width: 995px; /* Ajusta el ancho de las imágenes */
         height: 700px;
     }
-    .misvideos img{
+
+  .misvideos img{
       width: 300px; 
       height: 550px;
       border: 5px solid rgb(104, 100, 104);
   }
+
   .misvideos video{
       width: 300px; 
       height: 550px;
       border: 5px solid rgb(104, 100, 104);
   }
-
-
 }
